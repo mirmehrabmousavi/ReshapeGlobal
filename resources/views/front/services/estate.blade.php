@@ -7,8 +7,8 @@
                                                                               src="/front/images/slider/banner-2.jpg"/>
             <div class="content half-size colors-a">
                 <div class="container">
-                    <h2>{!! __('messages.estate.1') !!}</h2>
-                    <p class="title">{!! __('messages.estate.2') !!}</p>
+                    <h2 class=" scroll-in-animation" data-animation="fadeInDown">{!! __('messages.estate.1') !!}</h2>
+                    <p class="title scroll-in-animation" data-animation="fadeInDown">{!! __('messages.estate.2') !!}</p>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                         <div class="col-md-12">
                             @foreach($estates as $val)
                                 {{--Start Estate Post--}}
-                                <div class="row post">
+                                <div class="row post scroll-in-animation" data-animation="fadeInDown">
                                     @if($val->id % 2)
                                         <div class="col-md-3 post-meta">
                                         </div>

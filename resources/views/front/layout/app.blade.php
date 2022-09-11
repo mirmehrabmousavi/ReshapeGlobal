@@ -22,6 +22,7 @@
     @if(App::isLocale('fa'))
         <link rel="stylesheet" href="/front/styles/persian.css" />
     @endif
+    @yield('style')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" type="text/css">
 </head>
 <body class="state1 background-100-e" dir="{{(App::isLocale('fa') ? 'rtl' : 'ltr')}}" class="{{(App::isLocale('fa') ? 'text-right' : '')}}">

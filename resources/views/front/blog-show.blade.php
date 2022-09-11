@@ -6,8 +6,8 @@
         <div class="view">
             <img alt class="bg" src="/front/images/placeholders/1920x1200-2.jpg" /><img alt class="bg" src="/front/images/placeholders/1920x1200-0.jpg" />
             <div class="content half-size colors-h">
-                <h2>{{(\Illuminate\Support\Facades\App::getLocale() === 'en') ? $blog->title : $blog->title_fa }}</h2>
-                <div class="header-details">{{(\Illuminate\Support\Facades\App::getLocale() === 'en') ? $blog->title : $blog->title_fa }}</div>
+                <h2 class=" scroll-in-animation" data-animation="fadeInDown">{{(\Illuminate\Support\Facades\App::getLocale() === 'en') ? $blog->title : $blog->title_fa }}</h2>
+                <div class="header-details scroll-in-animation" data-animation="fadeInDown">{{(\Illuminate\Support\Facades\App::getLocale() === 'en') ? $blog->title : $blog->title_fa }}</div>
             </div>
         </div>
     </section>
@@ -17,22 +17,24 @@
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row post">
-                            <div class="col-md-3 post-meta">
+                            <div class="col-md-3 post-meta scroll-in-animation" data-animation="fadeInDown">
                                 <div class="post-day">{{ $blog->created_at->format('D') }}</div>
                                 <div class="post-month">{{ $blog->created_at->format('M Y') }}</div>
                             </div>
                             <div class="col-md-9">
                                 <div class="post-body background-10-b">
-                                    <div class="post-image">
+                                    <div class="post-image scroll-in-animation" data-animation="fadeInDown">
                                         <img class="fluid-width" src="{{asset($blog->image)}}"
                                              alt="{{$blog->title}}">
                                     </div>
 
-                                    @if(\Illuminate\Support\Facades\App::getLocale() === 'en')
-                                        {!! $blog->desc !!}
-                                    @elseif(\Illuminate\Support\Facades\App::getLocale() === 'fa')
-                                        {!! $blog->desc_fa !!}
-                                    @endif
+                                    <div class=" scroll-in-animation" data-animation="fadeInDown">
+                                        @if(\Illuminate\Support\Facades\App::getLocale() === 'en')
+                                            {!! $blog->desc !!}
+                                        @elseif(\Illuminate\Support\Facades\App::getLocale() === 'fa')
+                                            {!! $blog->desc_fa !!}
+                                        @endif
+                                    </div>
 
                                     <br>
                                     <br>
@@ -40,7 +42,7 @@
 
                                     <div id="comments">
                                         <h4>2 {{__('messages.brandRegistration.21')}}</h4>
-                                        <ol class="comment-list">
+                                        <ol class="comment-list scroll-in-animation" data-animation="fadeInDown">
                                             <li>
                                                 <div class="comment">
                                                     <div class="avatar"><img alt="comment"
@@ -75,8 +77,8 @@
                                                 </ul>
                                             </li>
                                         </ol>
-                                        <h4>{{__('messages.brandRegistration.23')}}</h4>
-                                        <form class="comment-form" action="#" method="post" novalidate="novalidate">
+                                        <h4 class=" scroll-in-animation" data-animation="fadeInDown">{{__('messages.brandRegistration.23')}}</h4>
+                                        <form class="comment-form scroll-in-animation" data-animation="fadeInDown" action="#" method="post" novalidate="novalidate">
                                             <div class="row">
                                                 <div class="col-md-6 control-group">
                                                     <input type="text" name="your-name" value="" size="40"
@@ -108,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 sidebar page-transition">
+                    <div class="col-md-3 sidebar page-transition scroll-in-animation" data-animation="fadeInDown">
                         <div class="title">{{__('messages.blog.3')}}</div>
                         <ul dir="ltr">
                             @foreach($blogs as $val)

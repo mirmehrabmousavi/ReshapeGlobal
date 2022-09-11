@@ -8,8 +8,8 @@
             <img alt class="bg" src="/front/images/placeholders/1920x1200-2.jpg"/><img alt class="bg"
                                                                                        src="/front/images/placeholders/1920x1200-0.jpg"/>
             <div class="content half-size colors-h">
-                <h2>{!! __('messages.companyRegistration.company registration') !!}</h2>
-                <div class="header-details">{!! __('messages.companyRegistration.company registration') !!}</div>
+                <h2 class=" scroll-in-animation" data-animation="fadeInDown">{!! __('messages.companyRegistration.company registration') !!}</h2>
+                <div class="header-details scroll-in-animation" data-animation="fadeInDown">{!! __('messages.companyRegistration.company registration') !!}</div>
             </div>
         </div>
     </section>

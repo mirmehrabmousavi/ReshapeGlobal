@@ -7,8 +7,8 @@
                                                                               src="/front/images/slider/banner-2.jpg"/>
             <div class="content half-size colors-a">
                 <div class="container">
-                    <h2>{!! __("messages.blog.1") !!}</h2>
-                    <p class="title">{!! __('messages.blog.2') !!}</p>
+                    <h2 class=" scroll-in-animation" data-animation="fadeInDown">{!! __("messages.blog.1") !!}</h2>
+                    <p class="title scroll-in-animation" data-animation="fadeInDown">{!! __('messages.blog.2') !!}</p>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
                     <div class="row">
                         <div class="col-md-9">
                             @foreach($blogs as $val)
-                                <div class="row post">
+                                <div class="row post scroll-in-animation" data-animation="fadeInDown">
                                     <div class="col-md-3 post-meta">
                                         <div class="post-day">{{ $val->created_at->format('D') }}</div>
                                         <div class="post-month">{{ $val->created_at->format('M Y') }}</div>
@@ -78,7 +78,7 @@
                                 {{$blogs->links('front.pagination.paginate')}}
                             @endforeach
                         </div>
-                        <div class="col-md-3 sidebar page-transition">
+                        <div class="col-md-3 sidebar page-transition scroll-in-animation" data-animation="fadeInDown">
                             <div class="title">{{__('messages.blog.3')}}</div>
                             <ul>
                                 @foreach($blogs as $val)

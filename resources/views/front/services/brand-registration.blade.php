@@ -6,8 +6,8 @@
         <div class="view">
             <img alt class="bg" src="/front/images/placeholders/1920x1200-2.jpg" /><img alt class="bg" src="/front/images/placeholders/1920x1200-0.jpg" />
             <div class="content half-size colors-h">
-                <h2>{!! __('messages.brandRegistration.brand registration') !!}</h2>
-                <div class="header-details">{!! __('messages.brandRegistration.brand registration') !!}</div>
+                <h2 class="scroll-in-animation" data-animation="fadeInDown">{!! __('messages.brandRegistration.company registration') !!}</h2>
+                <div class="header-details scroll-in-animation" data-animation="fadeInDown">{!! __('messages.brandRegistration.company registration') !!}</div>
             </div>
         </div>
     </section>
@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row post">
-                            <div class="col-md-3 post-meta">
+                            <div class="col-md-3 post-meta scroll-in-animation" data-animation="fadeInDown">
                                 <div class="post-day">26</div>
                                 <div class="post-month">Apr 2015</div>
                                 <div class="post-author"><i class="fa fa-user"></i> By Admin</div>
@@ -30,70 +30,70 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="post-body background-10-b">
-                                    <div class="post-image">
+                                    <div class="post-image scroll-in-animation" data-animation="fadeInDown">
                                         <img class="fluid-width" src="/front/images/placeholders/848x433-0.jpg"
                                              alt="Post with Featured Image">
                                     </div>
-                                    <h3>
-                                        {!! __('messages.brandRegistration.brand registration') !!}
+                                    <h3 class="scroll-in-animation" data-animation="fadeInDown">
+                                        {!! __('messages.brandRegistration.company registration') !!}
                                     </h3>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.1') !!}
                                     </p>
-                                    <h5>
+                                    <h5 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.2') !!}
                                     </h5>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.3') !!}
                                     </p>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.4') !!}
                                     </p>
-                                    <h5>
+                                    <h5 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.5') !!}
                                     </h5>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.6') !!}
                                     </p>
-                                    <h6>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.7') !!}
                                     </h6>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.8') !!}
                                     </p>
-                                    <h6>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.9') !!}
                                     </h6>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.10') !!}
                                     </p>
-                                    <h6>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.11') !!}
                                     </h6>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.12') !!}
                                     </p>
-                                    <h6>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.13') !!}
                                     </h6>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.14') !!}
                                     </p>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.16') !!}
                                     </p>
-                                    <h6>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.17') !!}
                                     </h6>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.18') !!}
                                     </p>
                                     <br>
                                     <br>
-                                    <h5>
+                                    <h5 class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.19') !!}
                                     </h5>
-                                    <p>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.brandRegistration.20') !!}
                                     </p>
 
@@ -103,7 +103,7 @@
 
                                     <div id="comments">
                                         <h4>2 {{__('messages.brandRegistration.21')}}</h4>
-                                        <ol class="comment-list">
+                                        <ol class="comment-list scroll-in-animation" data-animation="fadeInDown">
                                             <li>
                                                 <div class="comment">
                                                     <div class="avatar"><img alt="comment"
@@ -138,30 +138,30 @@
                                                 </ul>
                                             </li>
                                         </ol>
-                                        <h4>{{__('messages.brandRegistration.23')}}</h4>
+                                        <h4 class="scroll-in-animation" data-animation="fadeInDown">{{__('messages.brandRegistration.23')}}</h4>
                                         <form class="comment-form" action="#" method="post" novalidate="novalidate">
                                             <div class="row">
-                                                <div class="col-md-6 control-group">
+                                                <div class="col-md-6 control-group scroll-in-animation" data-animation="fadeInDown">
                                                     <input type="text" name="your-name" value="" size="40"
                                                            placeholder="{{__('messages.brandRegistration.24')}}"
                                                            data-validation-required-message="Please fill the required field."
                                                            required>
                                                     <div class="help-block"></div>
                                                 </div>
-                                                <div class="col-md-6 control-group">
+                                                <div class="col-md-6 control-group scroll-in-animation" data-animation="fadeInDown">
                                                     <input type="email" name="your-email" value="" size="40"
                                                            placeholder="{{__('messages.brandRegistration.25')}}"
                                                            data-validation-required-message="Please fill the required field."
                                                            required>
                                                     <div class="help-block"></div>
                                                 </div>
-                                                <div class="col-md-12 control-group">
+                                                <div class="col-md-12 control-group scroll-in-animation" data-animation="fadeInDown">
                                                     <textarea name="your-message" placeholder="{{__('messages.brandRegistration.26')}}"
                                                               data-validation-required-message="Please fill the required field."
                                                               required></textarea>
                                                     <div class="help-block"></div>
                                                 </div>
-                                                <div class="col-md-12 form-actions">
+                                                <div class="col-md-12 form-actions scroll-in-animation" data-animation="fadeInDown">
                                                     <input class="button" type="submit" value="{{__('messages.brandRegistration.27')}}">
                                                 </div>
                                             </div>
@@ -171,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 sidebar page-transition">
+                    <div class="col-md-3 sidebar page-transition scroll-in-animation" data-animation="fadeInDown">
                         <div class="title">{{ __('messages.header.services') }}</div>
                         <ul dir="ltr">
                             <li><a href="{{ route('front.estate') }}">{{ __('messages.header.estate') }}</a></li>
