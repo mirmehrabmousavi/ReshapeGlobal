@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use App\Models\Estate;
 use App\Models\User;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
+use phpDocumentor\Reflection\Types\True_;
 
 class IndexController extends Controller
 {
@@ -24,6 +26,13 @@ class IndexController extends Controller
     {
         $estates = Estate::latest()->paginate(5);
         return view('front.services.estate',compact('estates'));
+    }
+
+    public function showEstate($title)
+    {
+        $estate = Estate::findOrFail($title);
+        $estates = Estate::latest()->paginate(10);
+        return view('front.services.estate-show',compact('estate','estates'));
     }
 
     public function brandRegistration()
@@ -93,7 +102,15 @@ class IndexController extends Controller
 
     public function blog()
     {
-        return view('front.blog');
+        $blogs = Blog::latest()->paginate(6);
+        return view('front.blog',compact('blogs'));
+    }
+
+    public function showBlog($id,$title)
+    {
+        $blog = Blog::findOrFail($id);
+        $blogs = Blog::latest()->paginate(10);
+        return view('front.blog-show',compact('blog', 'blogs','title'));
     }
 
     public function about()

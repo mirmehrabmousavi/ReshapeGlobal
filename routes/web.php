@@ -19,6 +19,7 @@ Route::group(['as' => 'front.','middleware' => 'language'], function () {
     Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('index');
     Route::get('/services', [\App\Http\Controllers\IndexController::class, 'services'])->name('services');
     Route::get('/services/estate', [\App\Http\Controllers\IndexController::class, 'estate'])->name('estate');
+    Route::get('/services/estate/{title}', [\App\Http\Controllers\IndexController::class, 'showEstate'])->name('estate.show');
     Route::get('/services/brandRegistration', [\App\Http\Controllers\IndexController::class, 'brandRegistration'])->name('brandRegistration');
     Route::get('/services/companyRegistration', [\App\Http\Controllers\IndexController::class, 'companyRegistration'])->name('companyRegistration');
     Route::get('/services/turkishCitizenship', [\App\Http\Controllers\IndexController::class, 'turkishCitizenship'])->name('turkishCitizenship');
@@ -33,6 +34,7 @@ Route::group(['as' => 'front.','middleware' => 'language'], function () {
     Route::get('/events', [\App\Http\Controllers\IndexController::class, 'events'])->name('events');
     Route::get('/environment', [\App\Http\Controllers\IndexController::class, 'environment'])->name('environment');
     Route::get('/blogs', [\App\Http\Controllers\IndexController::class, 'blog'])->name('blogs');
+    Route::get('/blogs/{id}/{title}', [\App\Http\Controllers\IndexController::class, 'showBlog'])->name('blog.show');
     Route::get('/about', [\App\Http\Controllers\IndexController::class, 'about'])->name('about');
     Route::get('/team', [\App\Http\Controllers\IndexController::class, 'team'])->name('team');
     Route::get('/contact', [\App\Http\Controllers\IndexController::class, 'contact'])->name('contact');

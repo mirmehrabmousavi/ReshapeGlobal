@@ -74,6 +74,11 @@ return [
         "41" => "Cinema",
     ],
     //Services
+    "estate" => [
+      "1" => 'Es<span class="highlight">tate</span>',
+      "2" => 'Es<span class="highlight">tate</span>',
+      "3" => 'Recent Estate',
+    ],
     "brandRegistration" => [
         "brand registration" => 'Brand<span class="highlight"> Registration</span>',
         "1" => 'یکی از علاقه مندی های افراد برای پیشرفت در آینده که اغلب به دنبال انجام آن هستند، ثبت کردن برند در کشور ترکیه می باشد. از آنجایی که این کشور به یکی از مقاصد تجاری مهم تبدیل شده است، مورد توجه افراد زیادی قرار دارد. به همین دلیل است که افراد به ثبت برند در ترکیه علاقه مند هستند. بهتر است بدانید که این کار به سادگی امکان پذیر نیست و نیازمند طی کردن مراحل خاصی است.',
@@ -348,6 +353,11 @@ return [
     //Events
     //Environment
     //Blog
+    "blog" => [
+      '1' => 'B<span class="highlight">LOG</span>',
+      '2' => 'B<span class="highlight">LOG</span>',
+      '3' => 'Recent Posts',
+    ],
     //Team
     //About
     //ContactUs

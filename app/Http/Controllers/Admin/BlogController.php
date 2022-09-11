@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -37,9 +38,20 @@ class BlogController extends Controller
         $blog->desc = $request->desc;
         $blog->title_fa = $request->title_fa;
         $blog->desc_fa= $request->desc_fa;
+        if ($request->file('image')) {
+            $file = $request->file('image');
+            $filename = date('YmdHi').$file->getClientOriginalName();
+            $path = $file->storeAs('uploads/blogs',$filename,'my_files');
+            $blog['image'] = $path;
+        }
         $blog->save();
 
-        return redirect(route('admin.indexBlog'))->with('done');
+        $notif = [
+            'alert-type' => 'success',
+            'message' => __('messages.toastr.storeSuccess')
+        ];
+
+        return redirect(route('admin.indexBlog'))->with($notif);
     }
 
     public function editBlog($id)
@@ -53,7 +65,6 @@ class BlogController extends Controller
         $request->validate([
             'title' => 'required',
             'desc' => 'required',
-            'image' => 'required',
         ]);
 
         $blog = Blog::findOrFail($id);
@@ -61,16 +72,34 @@ class BlogController extends Controller
         $blog->desc = $request->desc;
         $blog->title_fa = $request->title_fa;
         $blog->desc_fa = $request->desc_fa;
+        if ($request->file('image')) {
+            $file = $request->file('image');
+            Storage::disk('my_files')->delete($blog->image);
+            $filename = date('YmdHi').$file->getClientOriginalName();
+            $path = $file->storeAs('uploads/blogs',$filename,'my_files');
+            $blog['image'] = $path;
+        }
         $blog->save();
 
-        return redirect(route('admin.indexBlog'))->with('done');
+        $notif = [
+            'alert-type' => 'success',
+            'message' => __('messages.toastr.updateSuccess')
+        ];
+
+        return redirect(route('admin.indexBlog'))->with($notif);
     }
 
     public function deleteBlog($id)
     {
         $blog = Blog::findOrFail($id);
+        Storage::disk('my_files')->delete($blog->image);
         $blog->delete();
 
-        return redirect(route('admin.indexBlog'))->with('done');
+        $notif = [
+            'alert-type' => 'success',
+            'message' => __('messages.toastr.deleteSuccessfully')
+        ];
+
+        return redirect(route('admin.indexBlog'))->with($notif);
     }
 }

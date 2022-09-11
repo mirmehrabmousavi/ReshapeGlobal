@@ -27,7 +27,7 @@
                                     <td>{{$val->desc}}</td>
                                     <td>{{$val->title_fa}}</td>
                                     <td>{{$val->desc_fa}}</td>
-                                    <td><img src="{{asset($val->image)}}" alt="{{$val->title}}"></td>
+                                    <td><img src="{{asset($val->image)}}" alt="{{$val->title}}" height="70" width="70"></td>
                                     <td>
                                         <a href="{{route('admin.editBlog',['id' => $val->id])}}" class="btn btn-light px-5">Edit</a>
                                         <a href="{{route('admin.deleteBlog',['id' => $val->id])}}" class="btn btn-light px-5" onclick="event.preventDefault();
