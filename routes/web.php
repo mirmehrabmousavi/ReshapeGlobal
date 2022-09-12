@@ -53,7 +53,7 @@ Route::group(['as' => 'front.','middleware' => 'language'], function () {
 Auth::routes(['register' => false]);
 
 Route::group(['prefix' => 'admin', ['middleware' => 'auth']], function () {
-    Route::get('/dashboard', [\App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin.index');
+    Route::get('/', [\App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin.index');
     //Estate
     Route::get('estate', [\App\Http\Controllers\Admin\EstateController::class, 'indexEstate'])->name('admin.indexEstate');
     Route::get('estate/create', [\App\Http\Controllers\Admin\EstateController::class, 'createEstate'])->name('admin.createEstate');

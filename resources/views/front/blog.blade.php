@@ -35,9 +35,9 @@
                                                 <h3><a class="page-transition"
                                                        href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}">{{$val->title}}</a>
                                                 </h3>
-                                                <p>{!! Str::limit($val->desc, 175) !!}</p>
+                                                <p>{!! \Illuminate\Support\Str::limit($val->desc, 175) !!}</p>
                                                 <p><a href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}"
-                                                      class="page-transition post-read-more">Read more...</a></p>
+                                                      class="page-transition post-read-more">Read more...</a  ></p>
                                                 {{--<div class="post-tags styled-list">
                                                     <i class="fa fa-tags"></i>
                                                     <ul>
@@ -60,7 +60,7 @@
                                                 <h3><a class="page-transition"
                                                        href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}">{{$val->title_fa}}</a>
                                                 </h3>
-                                                <p>{!! Str::limit($val->desc_fa, 175) !!}</p>
+                                                <p>{!! \Illuminate\Support\Str::limit($val->desc_fa, 175) !!}</p>
                                                 <p><a href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}"
                                                       class="page-transition post-read-more">Read more...</a></p>
                                                 {{--<div class="post-tags styled-list">
