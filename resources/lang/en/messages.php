@@ -656,4 +656,8 @@ return [
         'updateSuccess' => 'Updated Successfully',
         'deleteSuccess' => 'Deleted Successfully',
     ],
+    'name' => 'Name',
+    'email' => 'Email',
+    'message' => 'Message',
+    'reply' => 'Reply',
 ];

@@ -629,8 +629,17 @@ return [
         '3' => 'پست های اخیر',
     ],
     //Team
+    "team" => [
+
+    ],
     //About
+    "about" => [
+
+    ],
     //ContactUs
+    "contactus" => [
+
+    ],
     //Footer
     "footer" => [
         'ReshapeGlobal' => 'ری شیپ <span class="highlight">گلوبال</span>',
@@ -656,4 +665,8 @@ return [
         'updateSuccess' => 'با موفقیت بروزرسانی شد',
         'deleteSuccess' => 'با موفقیت حذف شد',
     ],
+    'name' => 'نام',
+    'email' => 'ایمیل',
+    'message' => 'متن پیام',
+    'reply' => 'پاسخ',
 ];

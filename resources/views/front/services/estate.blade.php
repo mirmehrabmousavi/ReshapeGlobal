@@ -42,14 +42,14 @@
                                                 <p><a href="{{route('front.estate.show',['title' => $val->title])}}"
                                                       class="post-read-more page-transition">Read
                                                         more...</a></p>
-                                                <div class="post-tags styled-list">
+                                               {{-- <div class="post-tags styled-list">
                                                     <i class="fa fa-tags"></i>
                                                     <ul>
                                                         <li><a class="page-transition" href="#">Design</a></li>
                                                         <li><a class="page-transition" href="#">Branding</a></li>
                                                         <li><a class="page-transition" href="#">Typography</a></li>
                                                     </ul>
-                                                </div>
+                                                </div>--}}
                                             </div>
                                         </div>
                                     @elseif(\Illuminate\Support\Facades\App::getLocale() === 'fa')
@@ -68,14 +68,14 @@
                                                 <p><a href="{{route('front.estate.show',['title' => $val->title])}}"
                                                       class="post-read-more page-transition">Read
                                                         more...</a></p>
-                                                <div class="post-tags styled-list">
+                                               {{-- <div class="post-tags styled-list">
                                                     <i class="fa fa-tags"></i>
                                                     <ul>
                                                         <li><a class="page-transition" href="#">Design</a></li>
                                                         <li><a class="page-transition" href="#">Branding</a></li>
                                                         <li><a class="page-transition" href="#">Typography</a></li>
                                                     </ul>
-                                                </div>
+                                                </div>--}}
                                             </div>
                                         </div>
                                     @endif

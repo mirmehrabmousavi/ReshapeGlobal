@@ -35,17 +35,17 @@
                                                 <h3><a class="page-transition"
                                                        href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}">{{$val->title}}</a>
                                                 </h3>
-                                                <p>{!! $val->desc !!}</p>
+                                                <p>{!! Str::limit($val->desc, 175) !!}</p>
                                                 <p><a href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}"
                                                       class="page-transition post-read-more">Read more...</a></p>
-                                                <div class="post-tags styled-list">
+                                                {{--<div class="post-tags styled-list">
                                                     <i class="fa fa-tags"></i>
                                                     <ul>
                                                         <li><a class="page-transition" href="#">Design</a></li>
                                                         <li><a class="page-transition" href="#">Branding</a></li>
                                                         <li><a class="page-transition" href="#">Typography</a></li>
                                                     </ul>
-                                                </div>
+                                                </div>--}}
                                             </div>
                                         </div>
                                     @elseif(\Illuminate\Support\Facades\App::getLocale() == 'fa')
@@ -60,17 +60,17 @@
                                                 <h3><a class="page-transition"
                                                        href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}">{{$val->title_fa}}</a>
                                                 </h3>
-                                                <p>{!! $val->desc_fa !!}</p>
+                                                <p>{!! Str::limit($val->desc_fa, 175) !!}</p>
                                                 <p><a href="{{route('front.blog.show',['id' => $val->id,'title' => $val->title])}}"
                                                       class="page-transition post-read-more">Read more...</a></p>
-                                                <div class="post-tags styled-list">
+                                                {{--<div class="post-tags styled-list">
                                                     <i class="fa fa-tags"></i>
                                                     <ul>
                                                         <li><a class="page-transition" href="#">Design</a></li>
                                                         <li><a class="page-transition" href="#">Branding</a></li>
                                                         <li><a class="page-transition" href="#">Typography</a></li>
                                                     </ul>
-                                                </div>
+                                                </div>--}}
                                             </div>
                                         </div>
                                     @endif

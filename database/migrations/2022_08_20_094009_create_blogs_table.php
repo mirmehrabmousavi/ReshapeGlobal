@@ -22,6 +22,18 @@ class CreateBlogsTable extends Migration
             $table->text('image');
             $table->timestamps();
         });
+
+        Schema::create('comments', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id')->unsigned();
+            $table->integer('blog_id')->unsigned();
+            $table->integer('parent_id')->unsigned()->nullable();
+            $table->string('name');
+            $table->string('email');
+            $table->text('body');
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
@@ -32,5 +44,6 @@ class CreateBlogsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('blogs');
+        Schema::dropIfExists('comments');
     }
 }

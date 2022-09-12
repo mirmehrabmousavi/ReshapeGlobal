@@ -35,6 +35,7 @@ Route::group(['as' => 'front.','middleware' => 'language'], function () {
     Route::get('/environment', [\App\Http\Controllers\IndexController::class, 'environment'])->name('environment');
     Route::get('/blogs', [\App\Http\Controllers\IndexController::class, 'blog'])->name('blogs');
     Route::get('/blogs/{id}/{title}', [\App\Http\Controllers\IndexController::class, 'showBlog'])->name('blog.show');
+    Route::post('/comments/store', [\App\Http\Controllers\CommentController::class, 'store'])->name('comments.store');
     Route::get('/about', [\App\Http\Controllers\IndexController::class, 'about'])->name('about');
     Route::get('/team', [\App\Http\Controllers\IndexController::class, 'team'])->name('team');
     Route::get('/contact', [\App\Http\Controllers\IndexController::class, 'contact'])->name('contact');
