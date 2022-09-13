@@ -19,14 +19,7 @@
                         <div class="row post">
                             <div class="col-md-3 post-meta scroll-in-animation" data-animation="fadeInDown">
                                 <div class="post-day">26</div>
-                                <div class="post-month">Apr 2015</div>
-                                <div class="post-author"><i class="fa fa-user"></i> By Admin</div>
-                                <div class="post-comments"><i class="fa fa-comments-o"></i> <a class="page-transition"
-                                                                                               href="blog-single-1.html#comments">2
-                                        Comments</a></div>
-                                <div class="post-permalink"><i class="fa fa-link"></i> <a class="page-transition"
-                                                                                          href="blog-single-1.html">Permalink</a>
-                                </div>
+                                <div class="post-month">Apr 2022</div>
                             </div>
                             <div class="col-md-9">
                                 <div class="post-body background-10-b">
@@ -79,6 +72,9 @@
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.companyRegistration.14') !!}
                                     </p>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown">
+                                        {!! __('messages.companyRegistration.15') !!}
+                                    </h6>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.companyRegistration.16') !!}
                                     </p>
@@ -100,73 +96,6 @@
                                     <br>
                                     <br>
                                     <br>
-
-                                    <div id="comments">
-                                        <h4>2 {{__('messages.companyRegistration.21')}}</h4>
-                                        <ol class="comment-list scroll-in-animation" data-animation="fadeInDown">
-                                            <li>
-                                                <div class="comment">
-                                                    <div class="avatar"><img alt="comment"
-                                                                             src="/front/images/placeholders/380x573-2.jpg">
-                                                    </div>
-                                                    <div class="comment-box">
-                                                        <div class="comment-author"><a href="#">mike</a> April 26, 2014
-                                                            at 1:38 pm<a class="comment-reply-link" href="#"> -
-                                                                Reply</a></div>
-                                                        <div class="comment-text">
-                                                            <p>{{__('messages.companyRegistration.22')}}</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="children">
-                                                    <li>
-                                                        <div class="comment">
-                                                            <div class="avatar"><img alt="comment"
-                                                                                     src="/front/images/placeholders/380x573-0.jpg">
-                                                            </div>
-                                                            <div class="comment-box">
-                                                                <div class="comment-author meta"><a href="#">jessica</a>
-                                                                    April 26, 2014 at 1:39 pm<a
-                                                                        class="comment-reply-link" href="#"> - Reply</a>
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <p>{{__('messages.companyRegistration.22')}}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ol>
-                                        <h4 class="scroll-in-animation" data-animation="fadeInDown">{{__('messages.companyRegistration.23')}}</h4>
-                                        <form class="comment-form" action="#" method="post" novalidate="novalidate">
-                                            <div class="row">
-                                                <div class="col-md-6 control-group scroll-in-animation" data-animation="fadeInDown">
-                                                    <input type="text" name="your-name" value="" size="40"
-                                                           placeholder="{{__('messages.companyRegistration.24')}}"
-                                                           data-validation-required-message="Please fill the required field."
-                                                           required>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-6 control-group scroll-in-animation" data-animation="fadeInDown">
-                                                    <input type="email" name="your-email" value="" size="40"
-                                                           placeholder="{{__('messages.companyRegistration.25')}}"
-                                                           data-validation-required-message="Please fill the required field."
-                                                           required>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-12 control-group scroll-in-animation" data-animation="fadeInDown">
-                                                    <textarea name="your-message" placeholder="{{__('messages.companyRegistration.26')}}"
-                                                              data-validation-required-message="Please fill the required field."
-                                                              required></textarea>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-12 form-actions scroll-in-animation" data-animation="fadeInDown">
-                                                    <input class="button" type="submit" value="{{__('messages.companyRegistration.27')}}">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
                                 </div>
                             </div>
                         </div>

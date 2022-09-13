@@ -629,8 +629,17 @@ return [
       '3' => 'Recent Posts',
     ],
     //Team
+    "team" => [
+
+    ],
     //About
+    "about" => [
+
+    ],
     //ContactUs
+    "contactus" => [
+
+    ],
     //Footer
     "footer" => [
         'ReshapeGlobal' => 'RESHAPE <span class="highlight">GLOBAL</span>',
