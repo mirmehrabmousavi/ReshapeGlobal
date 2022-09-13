@@ -7,7 +7,7 @@
                 <div class="card-body">
                     <div class="card-title">Blog</div>
                     <hr>
-                    <form action="{{route('admin.storeBlog',['id' => $blog->id])}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('admin.updateBlog',['id' => $blog->id])}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('patch')
                         <div class="form-group">
@@ -29,7 +29,7 @@
                         <div class="form-group">
                             <label for="input-3">image</label>
                             <input type="file" class="form-control" name="image" id="input-3" required>
-                            <img src="{{$blog->image}}" alt="alt image">
+                            <img src="{{asset($blog->image)}}" alt="{{$blog->title}}">
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-light px-5">Save</button>

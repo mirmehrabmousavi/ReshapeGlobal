@@ -40,7 +40,7 @@ class EstateController extends Controller
         $estate->desc_fa = $request->desc_fa;
         if ($request->file('image')) {
             $file = $request->file('image');
-            $filename = date('YmdHi').$file->getClientOriginalName();
+            $filename = date('YmdHi').'Estate';
             $path = $file->storeAs('uploads/estates',$filename,'my_files');
             $estate['image'] = $path;
         }
@@ -75,7 +75,7 @@ class EstateController extends Controller
         if ($request->file('image')) {
             $file = $request->file('image');
             Storage::disk('my_files')->delete($estate->image);
-            $filename = date('YmdHi').$file->getClientOriginalName();
+            $filename = date('YmdHi').'Estate';
             $path = $file->storeAs('uploads/estates',$filename,'my_files');
             $estate['image'] = $path;
         }

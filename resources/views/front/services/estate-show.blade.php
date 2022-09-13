@@ -39,73 +39,6 @@
                                     <br>
                                     <br>
                                     <br>
-
-                                    <div id="comments">
-                                        <h4>2 {{__('messages.brandRegistration.21')}}</h4>
-                                        <ol class="comment-list scroll-in-animation" data-animation="fadeInDown">
-                                            <li>
-                                                <div class="comment">
-                                                    <div class="avatar"><img alt="comment"
-                                                                             src="/front/images/placeholders/380x573-2.jpg">
-                                                    </div>
-                                                    <div class="comment-box">
-                                                        <div class="comment-author"><a href="#">mike</a> April 26, 2014
-                                                            at 1:38 pm<a class="comment-reply-link" href="#"> -
-                                                                Reply</a></div>
-                                                        <div class="comment-text">
-                                                            <p>{{__('messages.brandRegistration.22')}}</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="children">
-                                                    <li>
-                                                        <div class="comment">
-                                                            <div class="avatar"><img alt="comment"
-                                                                                     src="/front/images/placeholders/380x573-0.jpg">
-                                                            </div>
-                                                            <div class="comment-box">
-                                                                <div class="comment-author meta"><a href="#">jessica</a>
-                                                                    April 26, 2014 at 1:39 pm<a
-                                                                        class="comment-reply-link" href="#"> - Reply</a>
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <p>{{__('messages.brandRegistration.22')}}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ol>
-                                        <h4 class=" scroll-in-animation" data-animation="fadeInDown">{{__('messages.brandRegistration.23')}}</h4>
-                                        <form class="comment-form scroll-in-animation" data-animation="fadeInDown" action="#" method="post" novalidate="novalidate">
-                                            <div class="row">
-                                                <div class="col-md-6 control-group">
-                                                    <input type="text" name="your-name" value="" size="40"
-                                                           placeholder="{{__('messages.brandRegistration.24')}}"
-                                                           data-validation-required-message="Please fill the required field."
-                                                           required>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-6 control-group">
-                                                    <input type="email" name="your-email" value="" size="40"
-                                                           placeholder="{{__('messages.brandRegistration.25')}}"
-                                                           data-validation-required-message="Please fill the required field."
-                                                           required>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-12 control-group">
-                                                    <textarea name="your-message" placeholder="{{__('messages.brandRegistration.26')}}"
-                                                              data-validation-required-message="Please fill the required field."
-                                                              required></textarea>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-12 form-actions">
-                                                    <input class="button" type="submit" value="{{__('messages.brandRegistration.27')}}">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +47,7 @@
                         <div class="title">{{__('messages.estate.3')}}</div>
                         <ul dir="ltr">
                             @foreach($estates as $val)
-                                <li><a href="{{ route('front.blog.show',['title' => $val->title]) }}">{{(\Illuminate\Support\Facades\App::getLocale() === 'en') ? $val->title : $val->title_fa }}</a></li>
+                                <li><a href="{{ route('front.blog.show',['id' => $val->id ,'title' => $val->title]) }}">{{(\Illuminate\Support\Facades\App::getLocale() === 'en') ? $val->title : $val->title_fa }}</a></li>
                             @endforeach
                         </ul>
                     </div>

@@ -19,11 +19,11 @@
                             <textarea class="form-control ckeditor" id="editor"  name="desc" placeholder="Enter Description" required>{{$estate->desc}}</textarea>
                         </div>
                         <div class="form-group">
-                            <label for="input-1">title(FA)</label>
+                            <label for="input-1">title (FA)</label>
                             <input type="text" class="form-control" dir="rtl" name="title_fa" id="input-1" value="{{$estate->title}}" placeholder="عنوان را وارد کنید" required>
                         </div>
                         <div class="form-group">
-                            <label for="editor">description(FA)</label>
+                            <label for="editor">description (FA)</label>
                             <textarea class="form-control ckeditor" dir="rtl" id="editor"  name="desc_fa" placeholder="متن محتوا را وارد کنید" required>{{$estate->desc}}</textarea>
                         </div>
                         <div class="form-group">

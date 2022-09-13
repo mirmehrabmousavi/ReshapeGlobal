@@ -28,11 +28,11 @@ class IndexController extends Controller
         return view('front.services.estate',compact('estates'));
     }
 
-    public function showEstate($title)
+    public function showEstate($id,$title)
     {
-        $estate = Estate::findOrFail($title);
+        $estate = Estate::findOrFail($id);
         $estates = Estate::latest()->paginate(10);
-        return view('front.services.estate-show',compact('estate','estates'));
+        return view('front.services.estate-show',compact('estate','estates','title'));
     }
 
     public function brandRegistration()
