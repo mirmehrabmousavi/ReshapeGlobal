@@ -72,6 +72,9 @@
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.environment.14') !!}
                                     </p>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown" style="color: green">
+                                        {!! __('messages.environment.15') !!}
+                                    </h6>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.environment.16') !!}
                                     </p>
@@ -81,83 +84,31 @@
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
                                         {!! __('messages.environment.18') !!}
                                     </p>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown" style="color: green">
+                                        {!! __('messages.environment.19') !!}
+                                    </h6>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
+                                        {!! __('messages.environment.20') !!}
+                                    </p>
+                                    <h6 class="scroll-in-animation" data-animation="fadeInDown" style="color: green">
+                                        {!! __('messages.environment.21') !!}
+                                    </h6>
+                                    <p class="scroll-in-animation" data-animation="fadeInDown">
+                                        {!! __('messages.environment.22') !!}
+                                    </p>
                                     <br>
                                     <br>
                                     <h5 class="scroll-in-animation" data-animation="fadeInDown" style="color: green">
-                                        {!! __('messages.environment.19') !!}
+                                        {!! __('messages.environment.23') !!}
                                     </h5>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.environment.20') !!}
+                                        {!! __('messages.environment.24') !!}
                                     </p>
 
                                     <br>
                                     <br>
                                     <br>
 
-                                    <div id="comments">
-                                        <h4 style="color: green">2 {{__('messages.environment.21')}}</h4>
-                                        <ol class="comment-list scroll-in-animation" data-animation="fadeInDown">
-                                            <li>
-                                                <div class="comment">
-                                                    <div class="avatar"><img alt="comment"
-                                                                             src="/front/images/placeholders/380x573-2.jpg">
-                                                    </div>
-                                                    <div class="comment-box">
-                                                        <div class="comment-author">April 26, 2014
-                                                            at 1:38 pm/div>
-                                                        <div class="comment-text">
-                                                            <p>{{__('messages.environment.22')}}</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="children">
-                                                    <li>
-                                                        <div class="comment">
-                                                            <div class="avatar"><img alt="comment"
-                                                                                     src="/front/images/placeholders/380x573-0.jpg">
-                                                            </div>
-                                                            <div class="comment-box">
-                                                                <div class="comment-author meta">
-                                                                    April 26, 2014 at 1:39 pm
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <p>{{__('messages.environment.22')}}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ol>
-                                        <h4 class="scroll-in-animation" data-animation="fadeInDown" style="color: green">{{__('messages.environment.23')}}</h4>
-                                        <form class="comment-form" action="#" method="post" novalidate="novalidate">
-                                            <div class="row">
-                                                <div class="col-md-6 control-group scroll-in-animation" data-animation="fadeInDown">
-                                                    <input type="text" name="your-name" value="" size="40"
-                                                           placeholder="{{__('messages.environment.24')}}"
-                                                           data-validation-required-message="Please fill the required field."
-                                                           required>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-6 control-group scroll-in-animation" data-animation="fadeInDown">
-                                                    <input type="email" name="your-email" value="" size="40"
-                                                           placeholder="{{__('messages.environment.25')}}"
-                                                           data-validation-required-message="Please fill the required field."
-                                                           required>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-12 control-group scroll-in-animation" data-animation="fadeInDown">
-                                                    <textarea name="your-message" placeholder="{{__('messages.environment.26')}}"
-                                                              data-validation-required-message="Please fill the required field."
-                                                              required></textarea>
-                                                    <div class="help-block"></div>
-                                                </div>
-                                                <div class="col-md-12 form-actions scroll-in-animation" data-animation="fadeInDown">
-                                                    <input class="button" type="submit" value="{{__('messages.environment.27')}}">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
                                 </div>
                             </div>
                         </div>

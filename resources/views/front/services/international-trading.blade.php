@@ -6,8 +6,8 @@
         <div class="view">
             <img alt class="bg" src="/front/images/placeholders/1920x1200-2.jpg" /><img alt class="bg" src="/front/images/placeholders/1920x1200-0.jpg" />
             <div class="content half-size colors-h">
-                <h2 class="scroll-in-animation" data-animation="fadeInDown">{!! __('messages.legalConsultancy.legal consultancy') !!}</h2>
-                <div class="header-details scroll-in-animation" data-animation="fadeInDown">{!! __('messages.legalConsultancy.legal consultancy') !!}</div>
+                <h2 class="scroll-in-animation" data-animation="fadeInDown">{!! __('messages.internationalTrading.international trading') !!}</h2>
+                <div class="header-details scroll-in-animation" data-animation="fadeInDown">{!! __('messages.internationalTrading.international trading') !!}</div>
             </div>
         </div>
     </section>
@@ -18,8 +18,8 @@
                     <div class="col-md-9">
                         <div class="row post">
                             <div class="col-md-3 post-meta scroll-in-animation" data-animation="fadeInDown">
-                                <div class="post-day">26</div>
-                                <div class="post-month">Apr 2015</div>
+                                <div class="post-day">21</div>
+                                <div class="post-month">Apr 2022</div>
                             </div>
                             <div class="col-md-9">
                                 <div class="post-body background-10-b">
@@ -28,52 +28,44 @@
                                              alt="Post with Featured Image">
                                     </div>
                                     <h3 class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.legal consultancy') !!}
+                                        {!! __('messages.internationalTrading.international trading') !!}
                                     </h3>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.1') !!}
+                                        {!! __('messages.internationalTrading.1') !!}
                                     </p>
                                     <h5 class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.2') !!}
+                                        {!! __('messages.internationalTrading.2') !!}
                                     </h5>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.3') !!}
+                                        {!! __('messages.internationalTrading.3') !!}
                                     </p>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.4') !!}
+                                        {!! __('messages.internationalTrading.4') !!}
                                     </p>
                                     <h5 class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.5') !!}
+                                        {!! __('messages.internationalTrading.5') !!}
                                     </h5>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.6') !!}
-                                    </p>
-                                    <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.7') !!}
+                                        {!! __('messages.internationalTrading.6') !!}
                                     </p>
                                     <h6 class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.9') !!}
+                                        {!! __('messages.internationalTrading.7') !!}
                                     </h6>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.10') !!}
+                                        {!! __('messages.internationalTrading.8') !!}
                                     </p>
-                                    <h6 class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.11') !!}
-                                    </h6>
-                                    <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.12') !!}
-                                    </p>
+                                    <br>
+                                    <br>
                                     <h5 class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.13') !!}
+                                        {!! __('messages.internationalTrading.19') !!}
                                     </h5>
                                     <p class="scroll-in-animation" data-animation="fadeInDown">
-                                        {!! __('messages.legalConsultancy.14') !!}
+                                        {!! __('messages.internationalTrading.20') !!}
                                     </p>
 
                                     <br>
                                     <br>
                                     <br>
-
                                 </div>
                             </div>
                         </div>
@@ -83,7 +75,7 @@
                         <ul dir="ltr">
                             <li><a href="{{ route('front.estate') }}">{{ __('messages.header.estate') }}</a></li>
                             <li><a href="{{ route('front.brandRegistration') }}">{{ __('messages.header.brand registration') }}</a></li>
-                            <li><a href="{{ route('front.legalConsultancy') }}">{{ __('messages.header.company registration') }}</a></li>
+                            <li><a href="{{ route('front.companyRegistration') }}">{{ __('messages.header.company registration') }}</a></li>
                             <li><a href="{{ route('front.turkishCitizenship') }}">{{ __('messages.header.turkish citizenship') }}</a></li>
                             <li><a href="{{ route('front.legalConsultancy') }}">{{ __('messages.header.legal consultancy') }}</a></li>
                             <li><a href="{{ route('front.importExport') }}">{{ __('messages.header.import export') }}</a></li>
@@ -96,7 +88,7 @@
     </section>
     <section>
         <div class="separator-extra"></div>
-        <h4 class="text-center">{{__('messages.legalConsultancy.28')}}</h4>
+        <h4 class="text-center">{{__('messages.internationalTrading.28')}}</h4>
         <div class="separator"></div>
         <div class="container">
             <div class="panel-group">
@@ -104,13 +96,13 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                {{__('messages.legalConsultancy.29')}}
+                                {{__('messages.internationalTrading.29')}}
                             </a>
                         </h4>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body">
-                            {{__('messages.legalConsultancy.30')}}
+                            {{__('messages.internationalTrading.30')}}
                         </div>
                     </div>
                 </div>
@@ -118,13 +110,13 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                {{__('messages.legalConsultancy.29')}}
+                                {{__('messages.internationalTrading.29')}}
                             </a>
                         </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
                         <div class="panel-body">
-                            {{__('messages.legalConsultancy.30')}}
+                            {{__('messages.internationalTrading.30')}}
                         </div>
                     </div>
                 </div>
@@ -132,13 +124,13 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                {{__('messages.legalConsultancy.29')}}
+                                {{__('messages.internationalTrading.29')}}
                             </a>
                         </h4>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
                         <div class="panel-body">
-                            {{__('messages.legalConsultancy.30')}}
+                            {{__('messages.internationalTrading.30')}}
                         </div>
                     </div>
                 </div>

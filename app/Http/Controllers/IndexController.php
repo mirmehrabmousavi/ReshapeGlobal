@@ -65,6 +65,21 @@ class IndexController extends Controller
         return view('front.services.ads');
     }
 
+    public function internationalTrading()
+    {
+        return view('front.services.international-trading');
+    }
+
+    public function programming()
+    {
+        return view('front.services.programming');
+    }
+
+    public function propertySales()
+    {
+        return view('front.services.property-sales');
+    }
+
     public function counseling()
     {
         return view('front.counseling');

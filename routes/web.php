@@ -26,6 +26,9 @@ Route::group(['as' => 'front.','middleware' => 'language'], function () {
     Route::get('/services/legalConsultancy', [\App\Http\Controllers\IndexController::class, 'legalConsultancy'])->name('legalConsultancy');
     Route::get('/services/importExport', [\App\Http\Controllers\IndexController::class, 'importExport'])->name('importExport');
     Route::get('/services/ads', [\App\Http\Controllers\IndexController::class, 'ads'])->name('ads');
+    Route::get('/services/internationalTrading', [\App\Http\Controllers\IndexController::class, 'internationalTrading'])->name('internationalTrading');
+    Route::get('/services/programming', [\App\Http\Controllers\IndexController::class, 'programming'])->name('programming');
+    Route::get('/services/propertySales', [\App\Http\Controllers\IndexController::class, 'propertySales'])->name('propertySales');
     Route::get('/counseling', [\App\Http\Controllers\IndexController::class, 'counseling'])->name('counseling');
     Route::get('/counseling/commercial', [\App\Http\Controllers\IndexController::class, 'commercial'])->name('commercial');
     Route::get('/counseling/legal', [\App\Http\Controllers\IndexController::class, 'legal'])->name('legal');
@@ -39,10 +42,6 @@ Route::group(['as' => 'front.','middleware' => 'language'], function () {
     Route::get('/about', [\App\Http\Controllers\IndexController::class, 'about'])->name('about');
     Route::get('/team', [\App\Http\Controllers\IndexController::class, 'team'])->name('team');
     Route::get('/contact', [\App\Http\Controllers\IndexController::class, 'contact'])->name('contact');
-    Route::get('/ccc', function () {
-        $blog = \App\Models\Blog::find(1);
-        return '<img src="'.asset($blog->image).'"/>';
-    })->name('contact');
     //ChangeLang
     Route::get('change-language/{lang}',[\App\Http\Controllers\IndexController::class, 'changeLang'])->name('changeLang');
 //    Route::get('locale/{locale}', function ($locale) {

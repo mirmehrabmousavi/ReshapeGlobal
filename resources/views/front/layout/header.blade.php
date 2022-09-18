@@ -93,6 +93,9 @@
                             <li><a href="{{route('front.legalConsultancy')}}" class="hover-effect">{{__('messages.header.legal consultancy')}}</a></li>
                             <li><a href="{{route('front.importExport')}}" class="hover-effect">{{__('messages.header.import export')}}</a></li>
                             <li><a href="{{route('front.ads')}}" class="hover-effect">{{__('messages.header.ads')}}</a></li>
+                            <li><a href="{{route('front.internationalTrading')}}" class="hover-effect">{{__('messages.header.international trading')}}</a></li>
+                            <li><a href="{{route('front.programming')}}" class="hover-effect">{{__('messages.header.programming')}}</a></li>
+                            <li><a href="{{route('front.propertySales')}}" class="hover-effect">{{__('messages.header.property sales')}}</a></li>
                         </ul>
                     </li>
 
@@ -270,8 +273,11 @@
                             <li><a href="{{route('front.companyRegistration')}}" class="hover-effect">{{__('messages.header.company registration')}}</a></li>
                             <li><a href="{{route('front.turkishCitizenship')}}" class="hover-effect">{{__('messages.header.turkish citizenship')}}</a></li>
                             <li><a href="{{route('front.legalConsultancy')}}" class="hover-effect">{{__('messages.header.legal consultancy')}}</a></li>
-                            <li><a href="{{route('front.importExport')}}" class="hover-effect">{{__('messages.header.import & export')}}</a></li>
+                            <li><a href="{{route('front.importExport')}}" class="hover-effect">{{__('messages.header.import export')}}</a></li>
                             <li><a href="{{route('front.ads')}}" class="hover-effect">{{__('messages.header.ads')}}</a></li>
+                            <li><a href="{{route('front.internationalTrading')}}" class="hover-effect">{{__('messages.header.international trading')}}</a></li>
+                            <li><a href="{{route('front.programming')}}" class="hover-effect">{{__('messages.header.programming')}}</a></li>
+                            <li><a href="{{route('front.propertySales')}}" class="hover-effect">{{__('messages.header.property sales')}}</a></li>
                         </ul>
                     </li>
                     <li class="dropdown"><a href="{{route('front.counseling')}}" class="hover-effect">{{__('messages.header.counseling')}}</a>
